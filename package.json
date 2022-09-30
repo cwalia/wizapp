@@ -1,0 +1,89 @@
+{
+  "name": "wizapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@types/vue-select": "^3.11.1",
+    "@vue/composition-api": "^1.0.0-rc.6",
+    "axios": "^0.21.1",
+    "babel-plugin-transform-ensure-ignore": "^0.1.0",
+    "bootstrap-vue": "^2.19.0",
+    "core-js": "^3.6.5",
+    "css-element-queries": "^1.2.3",
+    "normalize.css": "^8.0.1",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.1",
+    "vue-swal": "^1.0.0",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/lodash": "^4.14.165",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^1.1.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.50.1",
+    "sass-loader": "^10.0.5",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {
+      "no-console": 1,
+      "no-debugger": 1,
+      "no-unused-vars": 1
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint",
+      "pre-push": "yarn run lint"
+    }
+  }
+}

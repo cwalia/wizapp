@@ -1,0 +1,15 @@
+@import "~normalize.css/normalize.css";
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+@import "variables";
+
+body{
+  width:100%;
+  overflow: auto; 
+}
+
+#app {
+  height: 100vh;
+  box-sizing: border-box;
+}

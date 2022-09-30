@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- <script src='https://unpkg.com/@carrotsearch/foamtree' ></script> -->
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .preloader {
+            margin: calc(50vh - 100px) auto;
+            font-size: 10px;
+            text-indent: -9999em;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+            -webkit-animation: spin 1.4s infinite linear;
+            animation: spin 1.4s infinite linear;
+            transform: translateZ(0);
+            background: linear-gradient(to right, #dc3545 10%, rgba(67, 236, 76, 0) 42%);
+        }
+
+        .preloader:after {
+            background: white;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            content: '';
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .preloader:before {
+            width: 50%;
+            height: 50%;
+            border-radius: 100% 0 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #dc3545;
+            content: '';
+        }
+    </style>
+  </head>
+  <body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+    <div class="preloader"></div>
+  </div>
+  <!-- built files will be auto injected -->
+  </body>
+</html>
