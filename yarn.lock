@@ -3893,6 +3893,11 @@
     "whatwg-mimetype" "^2.2.0"
     "whatwg-url" "^7.0.0"
 
+"date-fns@^2.17.0":
+  "integrity" "sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA=="
+  "resolved" "https://registry.npmjs.org/date-fns/-/date-fns-2.29.3.tgz"
+  "version" "2.29.3"
+
 "de-indent@^1.0.2":
   "integrity" "sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0="
   "resolved" "https://registry.npmjs.org/de-indent/-/de-indent-1.0.2.tgz"
@@ -7028,6 +7033,11 @@
   "integrity" "sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA=="
   "resolved" "https://registry.npmjs.org/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz"
   "version" "4.6.1"
+
+"lodash.isequal@^4.5.0":
+  "integrity" "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ=="
+  "resolved" "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz"
+  "version" "4.5.0"
 
 "lodash.kebabcase@^4.1.1":
   "integrity" "sha1-hImxyw0p/4gZXM7KRI/21swpXDY="
@@ -10633,6 +10643,14 @@
   "integrity" "sha512-leT4kdJVQyeZNY1kmnS1xiUlQ9z1B/kdBFCILIjYYQDqZgLqCLa0UhjSSeRX6c3mUe6U5qYeM8LrEqkHJ1B4LA=="
   "resolved" "https://registry.npmjs.org/vue-functional-data-merge/-/vue-functional-data-merge-3.1.0.tgz"
   "version" "3.1.0"
+
+"vue-good-table@^2.21.11":
+  "integrity" "sha512-OpVPdxbBTahtfq1aXxEa5P1CMy1wiLcBg4mo7k6Qs537l9v8KVrvF+fXqbnxqNrAfmd1Mw9LidcjgTErjmVU8g=="
+  "resolved" "https://registry.npmjs.org/vue-good-table/-/vue-good-table-2.21.11.tgz"
+  "version" "2.21.11"
+  dependencies:
+    "date-fns" "^2.17.0"
+    "lodash.isequal" "^4.5.0"
 
 "vue-hot-reload-api@^2.3.0":
   "integrity" "sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog=="
