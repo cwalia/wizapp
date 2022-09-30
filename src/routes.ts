@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, {RouterOptions} from 'vue-router'
 
-const HomePage = () => import("@/components/HomePage.vue");
+const TableView = () => import("@/components/TableView.vue");
 const CardView = () => import("@/components/CardView.vue");
 Vue.use(VueRouter);
 
@@ -9,7 +9,7 @@ export const routerOptions: RouterOptions = {
   routes: [
     {
       path: '/',
-      component: HomePage,
+      component: TableView,
     },{
       path: '/cards/:id?',
       component: CardView,

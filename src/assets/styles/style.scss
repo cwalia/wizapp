@@ -4,13 +4,11 @@
 
 @import "variables";
 @import "tableView";
-@import "CardView";
 body{
   width:100%;
   overflow: auto; 
 }
 
 #app {
-  height: 100vh;
   box-sizing: border-box;
 }

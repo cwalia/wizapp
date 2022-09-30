@@ -2,11 +2,13 @@ import {ActionTree, GetterTree, MutationTree} from "vuex";
 import {fetchTableData} from "@/api/result";
 
 interface State {
-  tableData:[]
+  tableData:[],
+  darkMode: boolean
 }
 
 const state: State = {
-  tableData:[]
+  tableData:[],
+  darkMode: false
 }
 
 const mutations = <MutationTree<State>>{
