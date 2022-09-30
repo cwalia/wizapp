@@ -1,16 +1,17 @@
 <template>
   <div>
-    <header-nav></header-nav>
-    hey HomePage
+    <table-view></table-view>
+    <card-view></card-view>
   </div>
 </template>
 
 <script lang="ts">
 import {Component, Vue, Prop} from 'vue-property-decorator';
-import HeaderNav from './HeaderNav.vue'
+import TableView from './TableView.vue'
+import CardView from './CardView.vue'
 @Component({
   components: {
-    HeaderNav
+    TableView,CardView
   },
 })
 export default class HomePage extends Vue {

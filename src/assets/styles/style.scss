@@ -3,7 +3,8 @@
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 
 @import "variables";
-
+@import "tableView";
+@import "CardView";
 body{
   width:100%;
   overflow: auto; 

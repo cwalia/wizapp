@@ -1,29 +1,31 @@
 import {ActionTree, GetterTree, MutationTree} from "vuex";
-import {sample} from "@/api/result";
+import {fetchTableData} from "@/api/result";
 
 interface State {
-  sample:string
+  tableData:[]
 }
 
 const state: State = {
-  sample:''
+  tableData:[]
 }
 
 const mutations = <MutationTree<State>>{
-  sample(state,payload:string){
-    state.sample=payload
+  setTableData(state,payload:[]){
+    state.tableData=payload
   }
 };
 
 export const actions = <ActionTree<State, any>>{
-  async sample({commit, state},) {
-    const data = await sample()
+  async fetchTableData({commit, state},) {
+    const data = await fetchTableData()
+    commit('setTableData',data)
+    console.log(data)
   }
 };
 
 const getters = <GetterTree<State, any>>{
-  getSample(state, getters) {
-    return state.sample
+  getTableData(state, getters) {
+    return state.tableData
   },
 }
 

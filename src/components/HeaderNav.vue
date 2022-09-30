@@ -7,9 +7,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Table View</b-nav-item>
-          <b-nav-item href="#">Card View</b-nav-item>
-          <b-nav-item href="#">Change Mode</b-nav-item>
+          <b-nav-item v-for="item in menuItems" :key="item.text" @click="moveToPage(item.id)">{{item.text}}</b-nav-item>
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
@@ -31,5 +29,13 @@ import {Component, Vue, Prop} from 'vue-property-decorator';
   },
 })
 export default class HeaderNav extends Vue {
+  menuItems = [
+    {id:'',text:'Table View'},
+    {id:'cards',text:'Card View'},
+    {id:'setting',text:'Change Mode'},
+  ]
+  moveToPage(id:string){
+    this.$router.push('/'+id)
+  }
 }
 </script>
