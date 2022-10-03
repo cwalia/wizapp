@@ -23,3 +23,9 @@
 .dark-mode {
     background: #222;
 }
+.table-responsive{
+    max-height: 400px;
+    th{
+        min-width: 200px !important;
+    }
+}

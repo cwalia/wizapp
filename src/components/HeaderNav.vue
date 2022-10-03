@@ -33,8 +33,8 @@ import {Component, Vue, Prop} from 'vue-property-decorator';
 export default class HeaderNav extends Vue {
   menuItems = [
     {id:'',text:'Table View'},
+    {id:'table',text:'Sticky Table View'},
     {id:'cards',text:'Card View'},
-    // {id:'setting',text:'Change Mode'},
   ]
   selected = null
   moveToPage(id:string){
